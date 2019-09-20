@@ -1,0 +1,631 @@
+/*顶部导航样式*/
+*{
+    border: 0;
+    margin: 0;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 10;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+}
+#logo>ul>li,#nav>ul>li{
+    position: relative;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#logo{
+    position: relative;
+    float: left;
+    width: 25%;
+}
+#logo>ul>li{
+    line-height: 60px;
+    text-align: center;
+    width:46%;
+}
+#log{
+    position: relative;
+    left: 20%;
+    margin-top: 9px;
+}
+#lt{
+    position: relative;
+    left: 0;
+    font-size: 24px;
+}
+#nav{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+#nav>ul{
+    position: relative;
+    left: 60%;
+}
+#nav>ul>li{
+    text-align: center;
+    line-height: 60px;
+    width: 15%;
+}
+#nav>ul>li>a{
+    font-size: 17px;
+    font-weight: 500;
+}
+#nav>ul>li>a:hover{
+    color: #118041;
+}
+/*当前为第一个页面*/
+#nav>ul>li:first-child>a{
+    color: #118041;
+}
+
+/*大图第一页样式 高度 650px*/
+#bpt{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    background-image: url("../img/slide6.jpg");
+}
+#pngt6{
+    position: relative;
+    left: 33%;
+    top: 35%;
+    width: 30%;
+    height: 80px;
+}
+#xyd{
+    position: absolute;
+    left: 45.5%;
+    top: 600px;
+    width: 120px;
+    height: 20px;
+}
+#xyd>ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#xyd>ul>li{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+/*大图第二页 VR房产 虚拟现实 高度600px*/
+#pg2{
+    position: absolute;
+    top: 650px;;
+    width: 100%;
+    height: 600px;
+}
+#pg2_head{
+    position: relative;
+    height: 150px;
+}
+#pg2_head>img{
+    position: relative;
+    top: 20px;
+    left: 45%;
+}
+#pg2_head_p1{
+    position: relative;
+    top: 20px;
+    left: 47%;
+    font-size: xx-large;
+    font-family:'Arial';
+    color: gray;
+}
+#pg2_head_p2{
+    position: relative;
+    top: 20px;
+    left: 44%;
+    font-size: large;
+    font-family:'Arial';
+    color: gray;
+}
+#pg2_left{
+     position: relative;
+     float: left;
+     width: 55%;
+     height: 450px;
+ }
+.pg2_left_tit{
+    position: relative;
+    margin-top: 25px;
+    left: 10%;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+.pg2_left_bod{
+    position: relative;
+    margin-top: 10px;
+    left: 5%;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-family:"Microsoft YaHei UI";
+    color: gray;
+}
+#pg2_right{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 450px;
+}
+#pg2_right>img{
+    position: relative;
+    top: 30px;
+    left: 42px;
+}
+
+/*第三页 拉长窗口期 快人一步 高度370px*/
+
+#pg3{
+    position: absolute;
+    width: 100%;
+    height: 370px;
+    background-color: whitesmoke;
+    top: 1250px;
+}
+#pg3_left{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 370px;
+}
+#pg3_left>img{
+    position: relative;
+    left: 10%;
+    top: 40px;
+}
+#pg3_right{
+    position: relative;
+    float: left;
+    width: 51%;
+    height: 370px;
+}
+#pg3_tit{
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+}
+.pg3_bod{
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: grey;
+}
+
+/*第四页  超出预算 高度370px*/
+
+#pg4{
+    position: absolute;
+    width: 100%;
+    height: 370px;
+    top: 1620px;
+}
+#pg4_left{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 370px;
+}
+#pg4_right>img{
+    position: relative;
+    left: 10%;
+    top: 40px;
+}
+#pg4_left{
+    position: relative;
+    float: left;
+    width: 51%;
+    height: 370px;
+}
+.pg4_tit{
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.pg4_bod{
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: grey;
+}
+
+/*第五页 图专注359px 专业 和微信扫码开头 高度一共650px*/
+#pg5{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    top: 2030px;
+}
+#pg5_top>img:first-child{
+    position: relative;
+    width: 100%;
+    height: 359px;
+}
+#pg5_top>img:nth-child(2){
+    position: relative;
+    top: -210px;
+    left: 25%;
+    z-index: 5;
+}
+#pg5_but{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    line-height: 50px;
+}
+#pg5_but>p:nth-child(2){
+    font-size: xx-large;
+    font-family:'Arial';
+    position: relative;
+    top: -20px;
+    color: gray;
+}
+#pg5_but>p:nth-child(3){
+    position: relative;
+    top: -23px;
+    font-size: 30px;
+    font-family:'Arial';
+    color: gray;
+}
+#pg5_but>p:nth-child(4){
+    position: relative;
+    top: -24px;
+    font-size: 25px;
+    font-family:'Arial';
+    color: gray;
+}
+
+/*第六页 9张微信扫码图片-框大小358x371 图大小358x273 ,外边框高度800px*/
+#pg6{
+    position: absolute;
+    width: 88%;
+    height: 800px;
+    top: 2680px;
+    margin-left: 8%;
+}
+.pg6_box{
+    position: relative;
+    float: left;
+    width: 358px;
+    height: 371px;
+    margin-left: 3%;
+    margin-top: 2%;
+    overflow: hidden;
+    border: 1px solid forestgreen;
+}
+.pg6_pic{
+    position: relative;
+    width: 100%;
+    height: 273px;
+    overflow: hidden;
+}
+.pg6_bot{
+    position: relative;
+    width: 100%;
+    top: -200px;
+    height: 90px;
+}
+.pg6_tit{
+    position: relative;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 18px;
+    font-size: small;
+    font-family:'Arial';
+    color: gray;
+}
+/*小图标*/
+.i1{
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/i1.png");
+}
+.i2{
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/i2.png");
+}
+.i3{
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/i3.png");
+}
+.i4{
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/i4.png");
+}
+/*二维码*/
+.pg6_pic_ewm{
+    position: relative;
+    height: auto;
+    width: auto;
+    top:-230px;
+    left: 80px;
+    z-index: -1;
+}
+
+.pg6_pic:hover .pg6_pic_ewm{
+    z-index: 5;
+}
+.pg6_pic:hover{
+    opacity: 0.3;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+/*第七页 VR2.0 + 视频 + 长图  高度900px*/
+#pg7{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    top: 3480px;
+}
+#pg7_tit{
+    position: relative;
+    line-height: 40px;
+    top: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Arial';
+    color: gray;
+}
+#pg7_vdo{
+    position: relative;
+    top: 60px;
+    left: 10%;
+}
+#pg7_pic{
+    position: relative;
+    top: 100px;
+    height: 215px;
+    overflow: hidden;
+    width: 100%;
+}
+.pg7_img1{
+    position: relative;
+    top: -200px;
+}
+.pg7_img2{
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 20%;
+    top: -740px;
+    z-index: 3;
+}
+
+/*第八页 3大优势 150x120 服务技术效率 + 图 + 合作伙伴开头 高度1000px*/
+#pg8{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 4400px;
+}
+.pg8_tit{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 27px;
+    font-family:'Arial';
+    color: gray;
+}
+#pg8_tit_p2{
+    font-size: 20px;
+}
+#pg8_bod1{
+    position: relative;
+    top: 100px;;
+    left: 9%;
+    width: 80%;
+    height: 300px;
+}
+.pg8_bod1_fjx{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 350px;
+    margin-left: 3%;
+    text-align: center;
+}
+.pg8_bod1_t2{
+    font-size: 15px;
+    font-family:'Arial';
+    font-weight: 600;
+    color: #606060;
+    position: relative;
+    margin-left: 20px;
+    line-height: 30px;
+    top: 30px;
+}
+/*两小图定位沿用pg7图*/
+#pg8_bod2{
+    position: relative;
+    top: 100px;
+    height: 215px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+ /*第九页 小图标260x160 高度450px*/
+#pg9{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 5400px;
+}
+.pg9_bor{
+    position: relative;
+    float: left;
+    left: 12%;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 155px;
+    margin-bottom: 40px;
+    margin-right: 7%;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+}
+.pg9_bor:hover{
+    top: -3px;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow:  7px 13px 10px 5px #b6b6b6;
+}
+/*尾页 高度250px*/
+#feet{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 5870px;
+    background-color: #2b2b2b;
+}
+.ra{
+    position: relative;
+    float: left;
+    top: 70px;
+    left: 48%;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #088a45;
+    background-image: url("../img/taobao.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+    transform: rotateZ(-360deg);
+}
+.ra:hover{
+    background-color: orange;
+    transition: all 1s;
+    transform: rotateZ(360deg);
+}
+#feet_nod{
+    position: relative;
+    top: 130px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: darkgrey;
+    line-height: 30px;
+}
+#feet_c{
+    font-size: large;
+}
+#feet_a{
+    font-size: small;
+}
+#feet_tel{
+    font-size: 25px;
+    color: #088a45;
+}
+ /*侧边栏*/
+#cbl{
+    position: fixed;
+    width: 6%;
+    left: 94%;
+    height: 100%;
+    top:0;
+    background-color: transparent;
+    opacity: 0.9;
+    display: none;
+}
+#cblbox{
+    position: relative;
+    top:27%;
+}
+#cblbox>li{
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    text-align: center;
+    height: 50px;
+    left: -30%;
+    font-size: xx-small;
+    margin-bottom: 20px;
+    background-color:grey ;
+}
+#cblbox>li>a{
+    position: relative;
+    top:35%;
+}
+#cblbox>li:hover{
+    background-color: #67b168;
+}
+#cblbox>li:nth-child(1){
+    background-color: #67b168;
+}
+/*小圆点侧边栏*/
+#smcbl{
+    position: fixed;
+    width: 6%;
+    left: 94%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+}
+#smbox{
+    position: relative;
+    top:40%;
+}
+#smbox>li{
+    position: relative;
+    width: 20%;
+    border-radius: 50%;
+    left: -24%;
+    height: 11px;
+    margin-bottom: 20px;
+    background-color:grey;
+}
+#smcbl:hover>#smbox{
+    display: none;
+}
+#smcbl:hover>#cbl{
+    display: block;
+}
+
